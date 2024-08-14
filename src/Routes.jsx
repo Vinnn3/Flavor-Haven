@@ -18,7 +18,7 @@ const AppRoutes=[
         element:<CreateRecipe />
       },
       {
-        path:"/recipe/:id",
+        path:"/recipes",
         element:<Recipe />
 
       }

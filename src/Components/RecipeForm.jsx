@@ -78,25 +78,25 @@ setMealType('');
         <label>
           Image:
           <input 
-            type="file" 
+            type="text" 
             onChange={e => setImage(e.target.files[0])} /> 
         </label>
         <label>
           Cuisine:
           <input 
-            type="file" 
+            type="text" 
             onChange={e => setCuisine(e.target.files[0])} /> 
         </label>
         <label>
           Rating:
           <input 
-            type="file" 
+            type="text" 
             onChange={e => setRating(e.target.files[0])} /> 
         </label>
         <label>
           Meal Type:
           <input 
-            type="file" 
+            type="text" 
             onChange={e => setMealType(e.target.files[0])} /> 
         </label>
         <button type="submit">Create Recipe</button>
