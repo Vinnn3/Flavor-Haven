@@ -11,7 +11,7 @@ const Navigation = () => {
       <NavLink to={'/create-recipe'}>
         <p>Create Recipe</p>
       </NavLink>
-      <NavLink to={'/recipe/:id'}>
+      <NavLink to={'/recipes'}>
         <p>Recipes</p>
       </NavLink>
 
