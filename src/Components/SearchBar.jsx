@@ -43,6 +43,9 @@ const SearchBar = () => {
             <h3>{recipe.name}</h3>
             <p>Ingredients: {recipe.ingredients.join(', ')}</p>
             <p>Instructions: {recipe.instructions}</p>
+            <p>Cuisine:{recipe.cuisine}</p>
+            <p>Rating:{recipe.rating}</p>
+            <p>Meal Type {recipe.mealType}</p>
             <img src={recipe.image} alt={recipe.name} style={{ width: '15%', height: 'auto' }} />
           </li>
         ))}
