@@ -6,6 +6,9 @@ const RecipeForm = () => {
   const [ingredients, setIngredients] = useState([]);
   const [instructions, setInstructions] = useState('');
   const [image, setImage] = useState(null); 
+  const [cuisine, setCuisine] = useState('');
+  const [rating , setRating] = useState('');
+  const [mealType, setMealType] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +22,11 @@ const newRecipe = {
   name,
   ingredients,
   instructions,
+  cuisine,
+  rating,
+  mealType,
   image: imageUrl,
+
 };
 
 fetch('http://localhost:3000/recipes', {
@@ -38,6 +45,9 @@ setTitle('');
 setIngredients([]);
 setInstructions('');
 setImage(null);
+setCuisine('');
+setRating('');
+setMealType('');
   };
 
   return (
@@ -71,6 +81,24 @@ setImage(null);
             type="file" 
             onChange={e => setImage(e.target.files[0])} /> 
         </label>
+        <label>
+          Cuisine:
+          <input 
+            type="file" 
+            onChange={e => setCuisine(e.target.files[0])} /> 
+        </label>
+        <label>
+          Rating:
+          <input 
+            type="file" 
+            onChange={e => setRating(e.target.files[0])} /> 
+        </label>
+        <label>
+          Meal Type:
+          <input 
+            type="file" 
+            onChange={e => setMealType(e.target.files[0])} /> 
+        </label>
         <button type="submit">Create Recipe</button>
       </form>
 
@@ -81,6 +109,9 @@ setImage(null);
         <h3>{recipe.name}</h3>
         <p><strong>Ingredients:</strong> {recipe.ingredients.join(', ')}</p>
         <p><strong>Instructions:</strong> {recipe.instructions}</p>
+        <p><strong>Cuisine:</strong> {recipe.cuisine}</p>
+        <p><strong>Rating:</strong> {recipe.rating}</p>
+        <p><strong>Meal Type:</strong> {recipe.mealType}</p>
         {recipe.image && <img src={recipe.image} alt={recipe.name} style={{ width: '200px' }} />}
       </li>
     ))}
