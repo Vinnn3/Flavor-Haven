@@ -78,13 +78,13 @@ setMealType('');
         <label>
           Image:
           <input 
-            type="text" 
+            type="file" 
             onChange={e => setImage(e.target.files[0])} /> 
         </label>
         <label>
           Cuisine:
           <input 
-            type="text" 
+            type="file" 
             onChange={e => setCuisine(e.target.files[0])} /> 
         </label>
         <label>
