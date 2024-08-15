@@ -1,0 +1,50 @@
+/* RecipeCard.css */
+
+.recipe-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.recipe-card:hover .details-overlay {
+  opacity: 1;
+}
+
+.recipe-card .recipe-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
