@@ -49,7 +49,7 @@ const Home = () => {
             Contact Us
           </h2>
           <p className="text-gray-700 leading-relaxed text-lg">
-            Email: flavourheaven@gmail.com
+            Email: flavourhaven@gmail.com
             </p>
             
             <p className="text-gray-700 leading-relaxed text-lg">
