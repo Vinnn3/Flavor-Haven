@@ -5,7 +5,7 @@ const SearchBar = () => {
   const [recipes, setRecipes] = useState([]);
 
   const searchRecipes = () => {
-    fetch('http://localhost:3000/recipes')
+    fetch('https://json-server-vercel-obw5.onrender.com/recipes')
       .then(response => response.json())
       .then(data => {
         const recipesArray = Array.isArray(data) ? data : data.recipes || [];

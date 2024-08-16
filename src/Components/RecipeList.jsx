@@ -5,7 +5,7 @@ const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/recipes')
+    fetch('https://json-server-vercel-obw5.onrender.com/recipes')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch recipes');
