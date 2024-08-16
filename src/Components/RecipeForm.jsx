@@ -27,7 +27,7 @@ const newRecipe = {
   image: imageUrl,
 
 };
- fetch('http://localhost:3000/recipes', {
+ fetch('https://json-server-vercel-obw5.onrender.com/recipes', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newRecipe),
