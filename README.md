@@ -2,12 +2,6 @@
 
 # Recipe Manager Web Application
 
-# Authours
-1.Seth Onyango
-2.Naomi Nyakaru
-3.Fahrij Bashir
-4.Sharon Mutugi
-
 # Table of Contents
 Introduction
 Features
